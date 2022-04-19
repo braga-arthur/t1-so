@@ -24,4 +24,8 @@ public class Cliente {
         this.nome = nome;
     }
 
+    public void fazerPedido(int prazo){
+
+    }
+
 }

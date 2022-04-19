@@ -2,10 +2,12 @@ public class Pedido {
 
     private int id;
     private Cliente cliente;
+    private int segundos;
 
-    public Pedido(int id, Cliente cliente){
+    public Pedido(int id, Cliente cliente, int segundos){
         setId(id);
         setCliente(cliente);
+        setSegundos(segundos);
     }
 
     public int getId() {
@@ -22,6 +24,14 @@ public class Pedido {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public int getSegundos() {
+        return segundos;
+    }
+
+    public void setSegundos(int segundos) {
+        this.segundos = segundos;
     }
 
     // fazer lista de pedidos aqui public Pedidos
