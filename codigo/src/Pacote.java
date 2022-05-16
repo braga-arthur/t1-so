@@ -1,11 +1,11 @@
 public class Pacote {
 
     private int id;
-    private Produto produto;
+    private Produto[] produtos;
 
-    public Pacote(int id, Produto produto){
+    public Pacote(int id, Produto produtos[]){
         setId(id);
-        setProdutos(produto);
+        setProdutos(produtos);
     }
 
     public int getId() {
@@ -16,11 +16,11 @@ public class Pacote {
         this.id = id;
     }
 
-    public Produto getProdutos() {
-        return produto;
+    public Produto[] getProdutos() {
+        return produtos;
     }
 
-    public void setProdutos(Produto produto) {
-        this.produto = produto;
+    public void setProdutos(Produto[] produto) {
+        this.produtos = produto;
     }
 }
