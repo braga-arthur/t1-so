@@ -36,6 +36,6 @@ public class Pedido {
 
     // fazer lista de pedidos aqui public Pedidos
     public void gerarPedido(Pacote pacote){
-
+        
     }
 }
