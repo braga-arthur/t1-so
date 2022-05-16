@@ -1,9 +1,11 @@
 public class Braco {
 
     private int id;
+    private Esteira esteira;
 
-    public Braco(int id){
+    public Braco(int id,Esteira esteira){
         setId(id);
+        setEsteira(esteira);
     }
 
     public int getId() {
@@ -14,13 +16,22 @@ public class Braco {
         this.id = id;
     }
 
-    // fazer pilha de produtos aqui (embalar) public Produtos
-    public void embalar(Pacote pacote){
+    public Pacote embalar(Produto[] produtos){
+        Pacote pacote = new Pacote(1,produtos);
+        return pacote;
     }
 
-    // fazer pilha de produtos aqui (desembalar) public Pacote
-    public void desembalar(Produto produto){
+    public Produto[] desembalar(Pacote pacote){
+
+        return pacote.getProdutos();
 
     }
 
+    public Esteira getEsteira() {
+        return esteira;
+    }
+
+    public void setEsteira(Esteira esteira) {
+        this.esteira = esteira;
+    }
 }

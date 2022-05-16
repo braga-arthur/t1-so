@@ -2,12 +2,10 @@ public class Esteira {
 
     private int id;
     private int velocidade;
-    private Braco braco;
 
-    public Esteira (int id, int velocidade, Braco braco){
+    public Esteira (int id, int velocidade){
         setId(id);
         setVelocidade(velocidade);
-        setBraco(braco);
     }
 
     public int getId() {
@@ -24,14 +22,6 @@ public class Esteira {
 
     public void setVelocidade(int velocidade) {
         this.velocidade = velocidade;
-    }
-
-    public Braco getBraco() {
-        return braco;
-    }
-
-    public void setBraco(Braco braco) {
-        this.braco = braco;
     }
 
     public void moverFrente(int centimentos){
